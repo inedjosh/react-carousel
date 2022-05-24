@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.carousel{
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inner{
+  white-space: nowrap;
+  transition: transform 1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.carouselItem{
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
   color: white;
+  height: 300px;
+  background-color: orange;
+}
+.indicators{
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.button{
+  margin:5px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active{
+  background-color: green;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.unActive{
+  background-color: blue;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.nextBtn{
+  font-size: 40px;
+  color: #3300cc;
+}
+
+
+.buttonPrev{
+  position: absolute;
+  top: 50%;
+  left: 0
+}
+
+.buttonNext{
+  position: absolute;
+  top: 50%;
+  right: 0
 }
